@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Image Upload with Scan Button</title>
+<link rel="stylesheet" href="static/css/scan_style.css">
+
+
+</head>
+
+<body>
+
+<div class="main">
+  <h1>Scanify</h1>
+  <p>Enter your details and get your result.!</p>
+  <div class="container">
+      <form action="/predict" method="post" enctype="multipart/form-data">
+          <div class="input-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+          <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+          <div class="input-group">
+              <label for="image-upload">Upload Image</label>
+              <input type="file" id="image-upload" name="file" accept="image/*">
+          </div>
+          <button type="submit">Scan</button>
+      </form>
+  </div>
+</div>
+ 
+
+
+</body>
+
+
+
+<script>
+    function previewImage(event) {
+        const reader = new FileReader();
+        reader.onload = function(){
+            const imagePreview = document.getElementById('image-preview');
+            imagePreview.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+
+    function scanImage() {
+        // Add functionality for scanning the uploaded image here
+        alert("Scanning the image...");
+    }
+</script>
+
+</body>
+</html>

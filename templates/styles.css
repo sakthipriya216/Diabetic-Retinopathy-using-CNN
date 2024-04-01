@@ -1,0 +1,165 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #FF8C00; /* Dark orange background */
+    color: #ffffff;
+    padding-top: 15px;
+    min-height: 70px;
+    border-bottom: #333 3px solid;
+}
+
+
+
+header h1 {
+    float: left;
+    margin-top: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 15px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section#hero {
+    background: #000;
+    color: #ffffff;
+    padding: 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    padding: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+section#features .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.feature-item {
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    min-width: 300px;
+    background-color: black;
+    border: 3px solid #333; /* Set border color to a slightly lighter shade of black */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.feature-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.intro-dr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0;
+}
+
+.intro-text, .intro-image {
+    flex-basis: 48%;
+}
+
+.intro-text {
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.intro-image {
+    flex-basis: 48%; /* Adjusts the base size of the column */
+    display: flex;
+    justify-content: center; /* Align content horizontally to center */
+    align-items: center; /* Align content vertically to center */
+}
+.intro-image img {
+    max-width: 300px; /* Set maximum width */
+    max-height: 250px; /* Set maximum height */
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+
+.intro-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #FFA500;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #FF8C00;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.sidebar ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+#symptoms ul {
+  padding-left: 20px;
+}
+
+#symptoms ul li {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.main-content {
+  width: 65%;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  
+}
+
+h1, h2, h4 {
+  color: #FF8C00;
+}
+h2 {
+  font-size: 28px; /* Adjust font size as needed */
+  color: #FF8C00; /* Color for the topics */
+}
+h1{
+  font-size: 24px;
+}
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .sidebar ul li {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+img {
+  width: 300px;/* Set maximum width to 100% of its container */
+  height: 300px; /* Maintain aspect ratio */
+  margin-top: 20px; 
+  margin-bottom: 20px;/* Adjust margin as needed */
+}
+.symptoms
+{
+  width: 500px;/* Set maximum width to 100% of its container */
+  height: 300px;
+}
+
+#stages
+{
+  width: 800px;/* Set maximum width to 100% of its container */
+  height: 500px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Diabetic Retinopathy</h1>
+  <h3>Understanding the Causes, Symptoms, and Treatment</h3>
+</div>
+
+<div class="container">
+
+  <div class="content">
+    <div class="main-content">
+      <h2>Overview</h2>
+      <img src="static/images/dr1.jfif" alt="Diabetic Retinopathy Image">
+      <p>Diabetic retinopathy is an eye condition that can cause vision loss and blindness in people who have diabetes. It affects blood vessels in the retina, the light-sensitive layer of tissue in the back of your eye.</p>
+    </div>
+    
+    <div class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#symptoms">Symptoms</a></li>
+        <li><a href="#causes">Causes</a></li>
+        <li><a href="#types">Types</a></li>
+        <li><a href="#stages">Stages</a></li>
+        <li><a href="#diagnosis">Diagnosis</a></li>
+        <li><a href="#prevention">Prevention</a></li>
+        <li><a href="#complications">Complications</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content" id="symptoms">
+    <h2>Symptoms</h2>
+    <img src="static/images/dr_diff.jfif" class="symptoms" alt="Symptoms Image">
+    <p>You might not have symptoms in the early stages of diabetic retinopathy. As the condition progresses, you might develop:</p>
+    <ul>
+      <li>Spots or dark strings floating in your vision (floaters)</li>
+      <li>Blurred vision</li>
+      <li>Fluctuating vision</li>
+      <li>Dark or empty areas in your vision</li>
+      <li>Vision loss</li>
+    </ul>
+  </div>
+
+
+
+  <div class="main-content" id="causes">
+    <h2>Causes</h2>
+    <p>Over time, too much sugar in your blood can lead to the blockage of the tiny blood vessels that nourish the retina, cutting off its blood supply. As a result, the eye attempts to grow new blood vessels. But these new blood vessels don't develop properly and can leak easily.</p>
+  </div>
+
+
+
+  <div class="main-content" id="types">
+    <h2>Types</h2>
+    <p>There are two stages of diabetic retinopathy:</p>
+    <h4>Nonproliferative retinopathy</h4>
+    <p>Nonproliferative retinopathy is the early stage of the disease in which blood vessels swell and leak. In some cases, this can cause macular edema (swelling of the retina) which may result in mild vision loss but can be treated. There can also be early changes to the nerve cells in the retina that may affect vision, in part due loss of adequate blood supply.</p>
+    <h4>Proliferative retinopathy</h4>
+    <p>Proliferative retinopathy is the advanced stage where abnormal new blood vessels grow on the surface of the retina. These vessels may break and bleed into the vitreous, the clear watery gel that fills the eye, and cause severe vision loss. This stage of diabetic retinopathy typically requires urgent treatment.</p>
+  </div>
+
+  
+
+  <div class="main-content" id="stages">
+    <h2>Stages of Diabetic Retinopathy</h2>
+    <img src="static/images/stages.png" alt="Stages Image" id="stages">
+    <p>Diabetic retinopathy is a progressive eye disease classified by four stages:</p>
+    <h4>Stage 1: Mild nonproliferative diabetic retinopathy</h4>
+    <p>This is the earliest stage of diabetic retinopathy, characterized by tiny areas of swelling in the blood vessels of the retina. These areas of swelling are known as microaneurysms. Small amounts of fluid can leak into the retina at the stage, triggering swelling of the macula. This is an area near the center of the retina.</p>
+    <h4>Stage 2: Moderate nonproliferative diabetic retinopathy</h4>
+    <p>Increased swelling of tiny blood vessels starts to interfere with blood flow to the retina, preventing proper nourishment. This causes an accumulation of blood and other fluids in the macula.</p>
+    <h4>Stage 3: Severe nonproliferative diabetic retinopathy</h4>
+    <p>A larger section of blood vessels in the retina become blocked, causing a significant decrease in blood flow to this area. At this point, the body receives signals to start growing new blood vessels in the retina.</p>
+    <h4>Stage 4: Proliferative diabetic retinopathy</h4>
+    <p>This is an advanced stage of the disease, in which new blood vessels form in the retina. Since these blood vessels are often fragile, there’s a higher risk of fluid leakage. This triggers different vision problems such as blurriness, reduced field of vision, and even blindness.</p>
+  </div>
+
+
+
+</div>
+
+</body>
+</html>
